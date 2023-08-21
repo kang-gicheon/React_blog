@@ -27,7 +27,9 @@
     "format": "prettier --check ./src",
     "format:fix": "prettier --write ./src",
     "lint": "eslint ./src",
-    "lint:fix": "eslint --fix ./src"
+    "lint:fix": "eslint --fix ./src",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "eslintConfig": {
     "extends": [
@@ -48,10 +50,24 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.3.2",
+    "@storybook/addon-interactions": "^7.3.2",
+    "@storybook/addon-links": "^7.3.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.3.2",
+    "@storybook/preset-create-react-app": "^7.3.2",
+    "@storybook/react": "^7.3.2",
+    "@storybook/react-webpack5": "^7.3.2",
+    "@storybook/testing-library": "^0.2.0",
     "@typescript-eslint/eslint-plugin": "^6.4.0",
     "@typescript-eslint/parser": "^6.4.0",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.33.2",
-    "prettier": "^3.0.2"
+    "eslint-plugin-storybook": "^0.6.13",
+    "prettier": "^3.0.2",
+    "prop-types": "^15.8.1",
+    "storybook": "^7.3.2",
+    "webpack": "^5.88.2"
   }
 }
